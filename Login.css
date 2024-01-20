@@ -1,0 +1,97 @@
+.LogBody
+{
+    background: #121010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar
+{
+    min-width: 100%;
+}
+.loginModal
+{
+    display: flex;
+    height: 500px;
+    width: 400px;
+    background: #282219;
+    margin: 20px;
+    border: 2px solid rgba(255, 99, 71, 0.647);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.navLogin
+{
+    display: flex;
+    text-decoration: none;
+    max-height: 10%;
+    background:#362e22;
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.ulLogin
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.li3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin:10px 0 0 0;
+    padding: 10px;
+    position: relative;
+}
+.a4
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 119, 0);
+    font-size: medium;
+}
+.li3:hover
+{
+    background: #282219;
+}
+
+.forms
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #000;
+    flex-grow: 1;
+    left: 140px;
+    color: green;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.click
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: iterate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes iterate {
+    50%{
+        color: transparent;
+        background-color: #282219;
+    }
+}

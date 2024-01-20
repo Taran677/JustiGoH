@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.body {
+    background-image: url("https://imgs.search.brave.com/GMJt5tKPBNEjpz-0Guo3BPuYrtRmQAiWxC4yxZj1N-0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9OZmZ3SUJD/LmpwZw");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.ul1,
+.ul2,
+.li1,
+.li2,
+.a1,
+.a2 {
+    display: flex;
+    text-decoration: none;
+}
+
+.a1,
+.a2 {
+    position: relative;
+}
+
+.hover {
+    display: flex;
+    min-height: 3px;
+    background: rgba(255, 85, 0, 0);
+}
+
+@keyframes hover {}
+
+.a1 {
+    flex-direction: column;
+}
+
+.navbar {
+    justify-content: center;
+    align-items: center;
+    background: #3c3c3c;
+}
+
+.ul1 {
+    justify-content: left;
+    align-items: center;
+}
+
+.ul2 {
+    justify-content: right;
+    align-items: center;
+}
+
+.li1 {
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
+
+}
+
+.li2 {
+    padding: 0px 20px 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.a1 {
+    color: rgb(255, 194, 177);
+    font-weight: 1000;
+}
+
+#logo {
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 169, 169);
+
+}
+
+#logo:hover {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-direction: both;
+}
+
+@keyframes glow {
+    0% {
+        color: rgb(172, 204, 85);
+
+    }
+
+    25% {
+        color: rgb(206, 206, 77);
+        font-size: 57px;
+    }
+
+    50% {
+        color: rgb(153, 153, 209);
+        font-size: 60px;
+
+    }
+
+    100% {
+        color: rgb(255, 169, 169);
+    }
+}
+
+.a2 {
+    color: rgba(255, 85, 0, 0.481);
+    font-weight: bolder;
+}
+
+.modal {
+    display: flex;
+    background: #00000031;
+    margin: 60px;
+    border-radius: 40px;
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    color: rgb(79, 42, 36);
+    padding: 15%;
+    font-size: 42pt;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    font-weight: 500;
+    display: flex;
+}
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    color: rgba(238, 232, 170, 0.658);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bt:hover {
+    color: rgb(238, 232, 170);
+    background: #5006068f;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    vertical-align: bottom;
+}
+
+svg {
+    margin: 10px 20px;
+    vertical-align: middle;
+    border-radius: 10px;
+    height: 30px;
+}
+
+svg:hover {
+    color: rgb(238, 232, 170);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.a1:hover {
+    color: rgb(255, 149, 120);
+}
+
+.a2:hover {
+    color: rgb(255, 85, 0);
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 90%;
+}
+
+.card {
+    max-width: 30%;
+    max-height: 70%;
+    background: #ffffff;
+    margin: 1%;
+    transition: max-width 1s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: stretch;
+    border-radius: 10px;
+}
+
+.pic {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+.imgCard {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.info {
+    padding: 10px;
+    margin: 10px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.button {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #c9956d;
+    align-self: flex-end;
+    align-self: center;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+.button:hover {
+    background: #9a5f32;
+    color: #ffffff;
+}
+
+.card:hover {
+    max-width: 33%;
+    margin: auto;
+    height: 100%;
+    align-items: stretch;
+}
+
+.footer {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    align-content: stretch;
+    padding-top: 5px;
+    min-width: 100%;
+    flex-direction: row;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.765);
+}
+
+.foot1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.a3 {
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    font-size: xx-small;
+    text-align: left;
+    padding: 5px 50px;
+}
+.a3:hover
+{
+    color: rgb(248, 193, 120);
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: stretch;
+}
+.two
+{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    color: rgb(255, 169, 169);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 769px) {
+    .text {
+        font-size: x-large;
+    }
+
+    a,
+    .info,
+    .button {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 449px) {
+
+    a,
+    .info,
+    .button {
+        font-size: xx-small;
+    }
+
+    svg {
+        margin: 5px 10px;
+        height: 10px;
+    }
+
+    .modal {
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 337px) {
+
+    a,
+    .info,
+    .button {
+        font-size: 6px;
+    }
+
+    svg {
+        margin: 2px 4px;
+        height: 6px;
+    }
+
+    .modal {
+        border-radius: 4px;
+    }
+}
