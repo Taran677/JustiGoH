@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 
 .body {
@@ -12,6 +13,8 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    min-width: 100%;
+    height: 100% !important;
 }
 
 .ul1,
@@ -45,6 +48,7 @@
     justify-content: center;
     align-items: center;
     background: #3c3c3c;
+    width: 100%;
 }
 
 .ul1 {
@@ -193,7 +197,6 @@ a {
 
 .card {
     max-width: 30%;
-    max-height: 70%;
     background: #ffffff;
     margin: 1%;
     transition: max-width 1s;
@@ -255,20 +258,22 @@ a {
 
 .footer {
     display: flex;
-    align-self: center;
+    align-self: flex-end;
     justify-content: space-around;
     align-content: stretch;
     padding-top: 5px;
     min-width: 100%;
+    height: auto;
     flex-direction: row;
-    margin-top: 20px;
     background: rgba(0, 0, 0, 0.765);
+    margin-top: auto;
 }
 
 .foot1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow-wrap: break-word;
 }
 
 .a3 {
@@ -326,6 +331,12 @@ a {
     .modal {
         border-radius: 15px;
     }
+    .two{
+        font-size: medium;
+    }
+    .a3{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 337px) {
@@ -344,4 +355,11 @@ a {
     .modal {
         border-radius: 4px;
     }
+}
+html{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
 }
